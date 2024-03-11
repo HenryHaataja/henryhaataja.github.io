@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 10px;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	height: 100%;
+	font-family: "Lucida Consolas", "Liberation Mono", monoscape;
+}
+
+body {
+	vertical-align: middle;
+	top: 0;
+	bottom: 0;
+}
+
+footer {
+	position: relative;
+	height: 15px;
+	width: 100%;
+}
+
+p.copyright {
+	position: absolute;
+	width: 100%;
+	color: LightBlue;
+	line-height: 20px;
+	font-size: 0.7em;
+	text-align: center;
+	bottom:0;
+}
+
+img {
+	float: right;
+	height: 200px;
+	border: 1px solid LightBlue;
+	border-radius: 50%;
+	position: relative;
+	top: -5px;
+}
+
+icon {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+h1 {
+	color: LightBlue;
+	line-height: 2;
+}
+
+h2 {
+	color: LightBlue;
+	line-height: 2;
+}
+
+h3 {
+	line-height: 2;
+}
+
+p  {
+	line-height: 1.5;	
+}
+
+table {
+	min-width: 500px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+td ul {
+	list-style-type: disc;
+}
+
+th, td {
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+th {
+	border-bottom: 1px solid LightBlue;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+tr {
+	padding-bottom: 20px;
+}
+
+li {
+	margin-left: 15px;
+	line-height: 1.5;
+}
+
+li::marker {
+	color: LightBlue;
+}
+
+.dot-f {
+	height: 9px;
+	width: 9px;
+	background-color: LightBlue;
+	border: 2px solid LightBlue;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot {
+	height: 9px;
+	width: 9px;
+	background-color: transparent;
+	border: 2px solid LightBlue;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.bar {
+    background: LightBlue;
+	border: 1px solid LightBlue;
+	border-radius: 25px;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.centered-container {
+	display: table;
+	margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+	.flex-header {
+		flex-direction: column-reverse;
+	}
+	.flex-container {
+		flex-direction: column;
+	}
+	.tabContent {
+		flex-direction: column;
+	}
+}
+
+.tile {
+	text-align: left;
+	vertical-align: middle;
+	margin: 5px;
+	padding: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background: AliceBlue;
+	border: 1px solid LightBlue;
+	border-radius: 25px;
+	width: 800px;
+}
+
+.dark-mode {
+	body {background-color: Gray;}
+	h1 {color: Pink;}
+	h2 {color: Pink;}
+	th {border-bottom: 1px solid Pink;}
+	li::marker {color: Pink;}
+	.dot-f {background-color: Pink; border: 2px solid Pink;}
+	.dot {border: 2px solid Pink;}
+	.tile {border: 1px solid Pink;}
+}
