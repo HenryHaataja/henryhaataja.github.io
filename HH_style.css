@@ -129,12 +129,6 @@ li::marker {
 	border-radius: 25px;
 }
 
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .centered-container {
 	display: table;
 	margin: 0 auto;
