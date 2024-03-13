@@ -10,7 +10,7 @@ html {
 	border: 0;
 	outline: 0;
 	height: 100%;
-	font-family: "Lucida Consolas", "Liberation Mono", monoscape;
+	font-family: "Lucida Consolas", "Liberation Mono", Calibri, Arial, monoscape;
 }
 
 body {
