@@ -180,10 +180,6 @@ li::marker {
 	margin: 0 auto;
 }
 
-@media (max-width: 800px) {
-	
-}
-
 .tile {
 	color: black;
 	text-align: left;
