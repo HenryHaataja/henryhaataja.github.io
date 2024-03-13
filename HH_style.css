@@ -208,7 +208,7 @@ li::marker {
 	border: 1px solid transparent;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-    position: -webkit-sticky;
+    	position: -webkit-sticky;
 	position: sticky;
 	top: 40%;
 	float: right;
@@ -225,7 +225,7 @@ li::marker {
 	margin: auto;
     align-self: center;
     width: 50%;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 /* <<< Liukuva sivu-/alapalkki*/
 
