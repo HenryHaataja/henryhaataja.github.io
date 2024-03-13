@@ -204,15 +204,6 @@ li::marker {
 	border: 1px solid LightPink;
 }
 
-/*
-.button {
-	height: 30px;
-	width: 30px;
-	float: middle;
-	top: 15px;
-}
-*/
-
 /* >>> Liukuva sivu-/alapalkki navigointia ja asetuspainikkeita varten */
 .sidebar {
 	width: 60px;
