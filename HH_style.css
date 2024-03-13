@@ -17,6 +17,12 @@ body {
 	vertical-align: middle;
 	top: 0;
 	bottom: 0;
+	background-color: white;
+	color: black;
+}
+
+.dark-mode {
+	background: #808080;	
 }
 
 footer {
@@ -32,23 +38,28 @@ p.copyright {
 	line-height: 20px;
 	font-size: 0.7em;
 	text-align: center;
-	bottom:0;
+	bottom: 0;
+}
+
+.dark-mode p.copyright {
+	color: LightPink;
 }
 
 img {
 	float: right;
 	height: 200px;
-	border: 1px solid LightBlue;
 	border-radius: 50%;
 	position: relative;
 	top: -5px;
 }
 
-icon {
-	width: 50px;
-	height: 50px;
-	float: left;
-	margin-right: 10px;
+.icon {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
 }
 
 h1 {
@@ -56,9 +67,17 @@ h1 {
 	line-height: 2;
 }
 
+.dark-mode h1 {
+	color: LightPink;
+}
+
 h2 {
 	color: LightBlue;
 	line-height: 2;
+}
+
+.dark-mode h2 {
+	color: LightPink;
 }
 
 h3 {
@@ -77,15 +96,30 @@ table {
 
 td ul {
 	list-style-type: disc;
+	color: black;
+}
+
+.dark-mode td, ul {
+	color: white;
 }
 
 th, td {
 	text-align: left;
 	padding-bottom: 5px;
+	color: black;
+}
+
+.dark-mode td {
+	color: white;
 }
 
 th {
 	border-bottom: 1px solid LightBlue;
+}
+
+.dark-mode th {
+	color: white;
+	border-bottom: 1px solid LightPink;
 }
 
 th:last-child{
@@ -99,10 +133,19 @@ tr {
 li {
 	margin-left: 15px;
 	line-height: 1.5;
+	color: black;
+}
+
+.dark-mode li {
+	color: white;
 }
 
 li::marker {
 	color: LightBlue;
+}
+
+.dark-mode li::marker {
+	color: LightPink;
 }
 
 .dot-f {
@@ -114,6 +157,11 @@ li::marker {
 	display: inline-block;
 }
 
+.dark-mode .dot-f {
+	background-color: LightPink;
+	border: 2px solid LightPink;
+}
+
 .dot {
 	height: 9px;
 	width: 9px;
@@ -123,10 +171,8 @@ li::marker {
 	display: inline-block;
 }
 
-.bar {
-    background: LightBlue;
-	border: 1px solid LightBlue;
-	border-radius: 25px;
+.dark-mode .dot {
+	border: 2px solid LightPink;
 }
 
 .centered-container {
@@ -135,37 +181,112 @@ li::marker {
 }
 
 @media (max-width: 800px) {
-	.flex-header {
-		flex-direction: column-reverse;
-	}
-	.flex-container {
-		flex-direction: column;
-	}
-	.tabContent {
-		flex-direction: column;
-	}
+	
 }
 
 .tile {
+	color: black;
 	text-align: left;
 	vertical-align: middle;
 	margin: 5px;
 	padding: 20px;
 	padding-left: 25px;
 	padding-right: 25px;
-	background: AliceBlue;
+	/*background-color: #f2f2f2;*/
+	background-color: rgba(230,230,230,0.5);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
-	width: 800px;
+	width: 700px;
 }
 
-.dark-mode {
-	body {background-color: Gray;}
-	h1 {color: Pink;}
-	h2 {color: Pink;}
-	th {border-bottom: 1px solid Pink;}
-	li::marker {color: Pink;}
-	.dot-f {background-color: Pink; border: 2px solid Pink;}
-	.dot {border: 2px solid Pink;}
-	.tile {border: 1px solid Pink;}
+.dark-mode .tile {
+	color: white;
+	border: 1px solid LightPink;
 }
+
+/*
+.button {
+	height: 30px;
+	width: 30px;
+	float: middle;
+	top: 15px;
+}
+*/
+
+/* >>> Liukuva sivu-/alapalkki navigointia ja asetuspainikkeita varten */
+.sidebar {
+	width: 60px;
+	height: 100px;
+	background-color: rgba(230,230,230,0.5);
+	border: 1px solid transparent;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 40%;
+	float: right;
+	margin-right: -10px;
+	align-items: center;
+}
+
+.dark-mode .sidebar {
+	background-color: rgba(230,230,230,0.5);
+	border: 1px solid transparent;
+}
+
+.sidebar-holder {
+	margin: auto;
+    align-self: center;
+    width: 50%;
+	margin-top: 15px;
+}
+/* <<< Liukuva sivu-/alapalkki*/
+
+/* >>> Sivupalkin painikkeet */
+.button-dm {
+	width: 30px;
+	height: 30px;
+	background-image: url("images/sun.png");
+	background-color:#ffe6b3;
+	background-size: cover;
+	border: 1px solid LightBlue;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.dark-mode .button-dm {
+	background-image: url("images/moon.png");
+	background-color: #5f5f5f;
+	background-size: cover;
+	border: 1px solid LightPink;
+	border-radius: 50%;
+}
+
+.button-lang {
+	width: 30px;
+	height: 30px;
+	background-image: url("images/icon-fi.png");
+	background-color:white;
+	background-size: cover;
+	border: 1px solid LightBlue;
+	border-radius: 50%;
+}
+
+.button-lang {
+	width: 30px;
+	height: 30px;
+	background-image: url("images/icon-fi.png");
+	background-color:white;
+	background-size: cover;
+	border: 1px solid LightBlue;
+	border-radius: 50%;
+}
+
+.dark-mode .button-lang {
+	border: 1px solid LightPink;
+}
+
+.en .button-lang {
+	background-image: url("images/icon-uk.png");
+}
+/* <<< Sivupalkin painikkeet */
