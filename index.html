@@ -8,16 +8,16 @@
 		<meta http-equiv='pragma' content='no-cache'>
 		<title>Henry Haataja</title>
 		<link rel="stylesheet" href="HH_style.css">
+		<!--<script src="HH_scripts.js" type="text/javascript"></script>-->
 	</head>
 	<body>
 		<div class="sidebar">
 			<div class="sidebar-holder">
 				<button onclick="toggleDarkMode()" class="button-dm"></button>
 				<button onclick="toggleLanguage()" class="button-lang" id="toggleLang"></button>
-				<!-- kielipainike vielä WIP -->
 			</div>
 		</div>
-		<div class="centered-container">
+		<div style="overflow: auto" class="centered-container">
 			<div class="tile">
 				<img src="images/passikuva.jpg"></img>
 				<h1>Henry Haataja</h1>
@@ -143,9 +143,19 @@
 				</ul>
 			</div>
 		</div>
+		<footer>
+			<p class="copyright">© Henry Haataja 2024 Notepad++</p>
+		</footer>
+		<script>
+			function toggleDarkMode() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			}
+
+			function toggleLanguage() {
+			var element = document.body;
+			element.classList.toggle("en");
+			}
+		</script>
 	</body>
-	<footer>
-		<p class="copyright">© Henry Haataja 2024 Notepad++</p>
-	</footer>
-	<script src="HH_scripts.js" type="text/javascript"></script>
 </html>
