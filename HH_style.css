@@ -25,25 +25,6 @@ body {
 	background: #808080;	
 }
 
-footer {
-	position: relative;
-	height: 10px;
-	width: 100%;
-	bottom: 0;
-}
-
-p.copyright {
-	color: LightBlue;
-	line-height: 10px;
-	font-size: 0.7em;
-	text-align: center;
-	bottom: 0;
-}
-
-.dark-mode p.copyright {
-	color: LightPink;
-}
-
 img {
 	float: right;
 	height: 200px;
@@ -276,3 +257,22 @@ li::marker {
 	background-image: url("images/icon-uk.png");
 }
 /* <<< Sivupalkin painikkeet */
+
+footer {
+	position: relative;
+	height: 10px;
+	width: 100%;
+	bottom: 0;
+}
+
+p.copyright {
+	color: LightBlue;
+	line-height: 10px;
+	font-size: 0.7em;
+	text-align: center;
+	bottom: 0;
+}
+
+.dark-mode p.copyright {
+	color: LightPink;
+}
