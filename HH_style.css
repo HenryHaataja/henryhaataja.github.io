@@ -232,17 +232,7 @@ li::marker {
 .button-lang {
 	width: 30px;
 	height: 30px;
-	background-image: url("images/icon-fi.png");
-	background-color:white;
-	background-size: cover;
-	border: 1px solid LightBlue;
-	border-radius: 50%;
-}
-
-.button-lang {
-	width: 30px;
-	height: 30px;
-	background-image: url("images/icon-fi.png");
+	background-image: url("images/icon-uk.png");
 	background-color:white;
 	background-size: cover;
 	border: 1px solid LightBlue;
@@ -253,8 +243,24 @@ li::marker {
 	border: 1px solid LightPink;
 }
 
+.fin {
+	display: block;
+}
+
+.en .fin {
+	display: none;
+}
+
+.eng {
+	display: none;
+}
+
+.en .eng {
+	display: block;
+}
+
 .en .button-lang {
-	background-image: url("images/icon-uk.png");
+	background-image: url("images/icon-fi.png");
 }
 /* <<< Sivupalkin painikkeet */
 
