@@ -9,8 +9,7 @@ html {
 	padding: 0;
 	border: 0;
 	outline: 0;
-	height: 100%;
-	font-family: "Lucida Consolas", "Liberation Mono", Calibri, Arial, monoscape;
+	font-family: "Lucida Consolas", "Liberation Mono", monoscape;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
 	bottom: 0;
 	background-color: white;
 	color: black;
+	overflow: auto;
 }
 
 .dark-mode {
@@ -37,9 +37,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    	display: inline-block;
-    	line-height: 0;
-    	vertical-align: middle;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
 }
 
 h1 {
@@ -69,7 +69,7 @@ p  {
 }
 
 table {
-	min-width: 500px;
+	width: 650px;
 	margin-top: 7px;
 	margin-bottom: 7px;
 }
@@ -103,7 +103,7 @@ th {
 }
 
 th:last-child{
-    	text-align: right;
+    text-align: right;
 }
 
 tr {
@@ -188,7 +188,7 @@ li::marker {
 	border: 1px solid transparent;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-    	position: -webkit-sticky;
+    position: -webkit-sticky;
 	position: sticky;
 	top: 45%;
 	float: right;
@@ -203,8 +203,8 @@ li::marker {
 
 .sidebar-holder {
 	margin: auto;
-    	align-self: center;
-    	width: 50%;
+    align-self: center;
+    width: 50%;
 	margin-top: 10px;
 }
 /* <<< Liukuva sivu-/alapalkki*/
@@ -213,8 +213,8 @@ li::marker {
 .button-dm {
 	width: 30px;
 	height: 30px;
-	background-image: url("images/sun.png");
-	background-color:#ffe6b3;
+	background-image: url("images/moon.png");
+	background-color: #5f5f5f;
 	background-size: cover;
 	border: 1px solid LightBlue;
 	border-radius: 50%;
@@ -222,8 +222,8 @@ li::marker {
 }
 
 .dark-mode .button-dm {
-	background-image: url("images/moon.png");
-	background-color: #5f5f5f;
+	background-image: url("images/sun.png");
+	background-color:#ffe6b3;
 	background-size: cover;
 	border: 1px solid LightPink;
 	border-radius: 50%;
@@ -239,10 +239,34 @@ li::marker {
 	border-radius: 50%;
 }
 
-.dark-mode .button-lang {
-	border: 1px solid LightPink;
+.en .button-lang {
+	background-image: url("images/icon-fi.png");
+}
+/* <<< Sivupalkin painikkeet */
+
+footer {
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	margin-bottom: -10px;
 }
 
+.dark-mode footer{
+	color: LightPink;
+}
+
+p.copyright {
+	color: LightBlue;
+	font-size: 0.7em;
+	text-align: center;
+	bottom: 0;
+}
+
+.dark-mode p.copyright {
+	color: LightPink;
+}
+
+/* Tekstien kielen vaihto */
 .fin {
 	display: block;
 }
@@ -257,28 +281,4 @@ li::marker {
 
 .en .eng {
 	display: block;
-}
-
-.en .button-lang {
-	background-image: url("images/icon-fi.png");
-}
-/* <<< Sivupalkin painikkeet */
-
-footer {
-	position: relative;
-	width: 100%;
-	bottom: 0;
-	margin-bottom: -10px;
-}
-
-p.copyright {
-	color: LightBlue;
-	line-height: 10px;
-	font-size: 0.7em;
-	text-align: center;
-	bottom: 0;
-}
-
-.dark-mode p.copyright {
-	color: LightPink;
 }
