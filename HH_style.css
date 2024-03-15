@@ -68,6 +68,218 @@ p  {
 	line-height: 1.5;	
 }
 
+.centered-container {
+	display: table;
+	margin: 0 auto;
+}
+
+.tile {
+	color: black;
+	text-align: left;
+	vertical-align: middle;
+	margin: 5px;
+	padding: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	/*background-color: #f2f2f2;*/
+	background-color: rgba(230,230,230,0.5);
+	border: 1px solid LightBlue;
+	border-radius: 25px;
+	width: 600px;
+}
+
+.dark-mode .tile {
+	color: white;
+	border: 1px solid LightPink;
+}
+
+/* >>> Pudotusvalikko */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  background-color: rgba(204, 204, 204);
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: 0.35s ease-out;
+  margin: 5px 5px;
+  width: 100%;
+}
+
+.button-dropdown {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgba(204, 204, 204);
+  border: 1px solid transparent;
+  border-radius: 25px;
+  width: 100%;
+  transition: 0.3s ease-out;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100000;
+  background-color: rgba(217, 217, 217);
+  border: 1px solid rgba(217, 217, 217);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: calc(100% + 2px);
+  left: -1px;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dropdown .dropdown-content.c  {
+	left: 50%;
+	margin-left: calc(-60% - 10px);
+}
+
+.dropdown .dropdown-content.r  {
+	right: 0;
+}
+
+.dropdown-content .mi {
+	display: block;
+	color: black;
+	padding: 5px 0;
+	text-decoration: none;
+	position: relative;
+}
+.dropdown-content .mi::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: 0.3s ease-out;
+}
+
+.dropdown:focus .dropdown-content {
+	outline: none;
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(20px);
+}
+
+/* Pudotusvalikon piilotettu sulkupainike */
+.dropdown .db2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 10;
+	display: none;
+}
+
+.dropdown:focus .db2 {
+	display: inline-block;
+}
+
+.dropdown .db2:focus .dropdown-content, .dropdown-content .db3:focus .dropdown-content {
+	outline: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.dropdown:focus  {
+	z-index: 1;
+}
+
+.dropdown:focus .dropbtn  {
+	background: none;
+}
+
+.dropdown:focus .dropbtn::after {
+	height: 0;
+	border-bottom: 0;
+	margin-bottom: 4px;
+}
+
+/* Pudotusvalikkoon mahdollisesti tulevat ikonit */
+.button-dropdown.i2::after {
+	content: "";
+	display: inline-block;
+	border: 0;
+	width: 15px;
+	height: 12px;
+	margin-left: 10px;
+}
+.dropdown:focus .button-dropdown.i2::after {
+	width: 15px;
+	height: 12px;
+}
+
+.sub-dropdown {
+	position: relative;
+}
+
+.sub-dropdown-content {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	background-color: rgba(230, 230, 230);
+	left: 100%;
+	top: -10px;
+	padding: 10px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	transition: 0.3s;
+}
+
+.sub-dropdown-content a {
+	color: black;
+	padding: 5px 12px;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+}
+
+.si {
+	cursor: default;
+}
+
+.si::after {
+	content: "\25B8";
+	margin-left: 5px;
+	vertical-align: -1px;
+	margin-right: 10px;
+	float: right;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(10px);
+}
+
+.sub-dropdown-content a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.3s;
+}
+
+.sub-dropdown-content a:hover::before {
+    opacity: 1;
+}
+/* <<< Pudotusvalikko */
+
 /* >>> Taulukot */
 table {
 	width: 100%;
@@ -78,6 +290,10 @@ table {
 th {
 	font-size: 16px;
 	text-align: left;
+}
+
+.table-cv tr {
+	cursor: pointer;
 }
 
 .table-cv th {
@@ -111,13 +327,15 @@ th, td {
 	color: white;
 }
 
+/*
 th {
 	border-bottom: 1px solid LightBlue;
 }
+*/
 
 .dark-mode th {
 	color: white;
-	border-bottom: 1px solid LightPink;
+	/* border-bottom: 1px solid LightPink; */
 }
 
 th:last-child{
@@ -172,31 +390,6 @@ li::marker {
 
 .dark-mode .dot {
 	border: 2px solid LightPink;
-}
-
-.centered-container {
-	display: table;
-	margin: 0 auto;
-}
-
-.tile {
-	color: black;
-	text-align: left;
-	vertical-align: middle;
-	margin: 5px;
-	padding: 20px;
-	padding-left: 25px;
-	padding-right: 25px;
-	/*background-color: #f2f2f2;*/
-	background-color: rgba(230,230,230,0.5);
-	border: 1px solid LightBlue;
-	border-radius: 25px;
-	width: 700px;
-}
-
-.dark-mode .tile {
-	color: white;
-	border: 1px solid LightPink;
 }
 
 /* >>> Liukuva sivu-/alapalkki navigointia ja asetuspainikkeita varten */
