@@ -37,9 +37,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    display: inline-block;
-    line-height: 0;
-    vertical-align: middle;
+    	display: inline-block;
+   	line-height: 0;
+    	vertical-align: middle;
 }
 
 h1 {
@@ -106,6 +106,7 @@ p  {
 .dark-mode .dropdownCV {
 	background-color: rgba(153, 153, 153);
 	border: 1px solid LightPink;
+	border-radius: 25px;
 }
 
 .button-dropdownCV {
@@ -137,7 +138,8 @@ p  {
 .dark-mode .dropdownCV-content {
 	background-color: rgba(153, 153, 153);
 	border: 1px solid LightPink;
-	border-top: 1px dashed LightPink;	
+	border-top: 1px dashed LightPink;
+	border-radius: 25px;
 }
 
 .dropdownCV .dropdownCV-content.c  {
