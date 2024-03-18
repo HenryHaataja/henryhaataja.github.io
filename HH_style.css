@@ -33,13 +33,25 @@ img {
 	top: -5px;
 }
 
-.icon {
+.icon-arrow {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    	display: inline-block;
-   	line-height: 0;
-    	vertical-align: middle;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+	top: 90%;
+	opacity: 0.2;
+}
+
+.dark-mode .icon-arrow {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+/* Käännä nuoli-ikoni ylöspäin kun valikko auki */
+.dropdownCV:focus .icon-arrow {
+	transform: rotate(180deg);
 }
 
 h1 {
@@ -111,7 +123,7 @@ p  {
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 100%;
-	height: 85px;
+	height: 90%;
 }
 
 .dark-mode .button-dropdownCV {
@@ -122,7 +134,7 @@ p  {
 
 .dropdownCV .dropdownCV-content {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	visibility: hidden;
 	opacity: 0;
 	background-color: rgba(230, 230, 230);
@@ -138,7 +150,7 @@ p  {
 .dark-mode .dropdownCV-content {
 	background-color: rgba(153, 153, 153);
 	border: 1px solid LightPink;
-	border-top: 1px dashed LightPink;
+	border-top: 1px dashed LightPink;	
 }
 
 .dropdownCV .dropdownCV-content.c  {
@@ -201,11 +213,11 @@ p  {
 	z-index: 1;
 }
 
-.dropdownCV:focus .dropbtn  {
-	background: none;
+.dropdownCV:focus .button-dropdownCV  {
+	
 }
 
-.dropdownCV:focus .dropbtn::after {
+.dropdownCV:focus .button-dropdownCV::after {
 	height: 0;
 	border-bottom: 0;
 	margin-bottom: 4px;
@@ -219,6 +231,7 @@ p  {
 	height: 12px;
 	margin-left: 10px;
 }
+
 .dropdownCV:focus .button-dropdownCV.i2::after {
 	width: 15px;
 	height: 12px;
@@ -347,7 +360,8 @@ li::marker {
 	width: 55px;
 	height: 100px;
 	background-color: rgba(242, 242, 242);
-	border: 1px solid transparent;
+	border: 1px solid LightBlue;
+	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
     position: -webkit-sticky;
@@ -356,11 +370,13 @@ li::marker {
 	float: right;
 	margin-right: -10px;
 	align-items: center;
+	z-index: 90;
 }
 
 .dark-mode .sidebar {
 	background-color: rgba(128, 128, 128);
-	border: 1px solid transparent;
+	border: 1px solid LightPink;
+	border-right: 1px solid transparent;
 }
 
 .sidebar-holder {
