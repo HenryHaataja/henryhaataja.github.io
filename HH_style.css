@@ -120,6 +120,12 @@ p  {
 	height: 85px;
 }
 
+.dark-mode .button-dropdownCV {
+	background-color: rgba(153, 153, 153);
+	border: 1px solid LightPink;
+	border-radius: 25px;
+}
+
 .dropdownCV .dropdownCV-content {
 	position: absolute;
 	top: 50%;
