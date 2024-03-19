@@ -370,41 +370,39 @@ li::marker {
 	border: 2px solid LightPink;
 }
 
-/* >>> Sivupalkki (iso ruutu) */
-@media(min-width:35.1em) {
-	.options-bar {
-		width: 55px;
-		height: 100px;
-		background-color: rgba(242, 242, 242, 0.5);
-		border: 1px solid LightBlue;
-		border-right: 1px solid transparent;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
-		position: -webkit-sticky;
-		position: sticky;
-		top: 45%;
-		float: right;
-		margin-right: -10px;
-		align-items: center;
-		z-index: 90;
-	}
-
-	.dark-mode .options-bar {
-		background-color: rgba(128, 128, 128, 0.5);
-		border: 1px solid LightPink;
-		border-right: 1px solid transparent;
-	}
-
-	.options-bar-holder {
-		margin: auto;
-		align-self: center;
-		width: 50%;
-		margin-top: 10px;
-	}
+/* >>> Sivupaneeli */
+.options-bar {
+	width: 55px;
+	height: 100px;
+	background-color: rgba(242, 242, 242, 0.5);
+	border: 1px solid LightBlue;
+	border-right: 1px solid transparent;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 45%;
+	float: right;
+	margin-right: -10px;
+	align-items: center;
+	z-index: 90;
 }
-/* <<< Sivupalkki (iso ruutu)*/
 
-/* >>> Sivupalkin painikkeet (iso ruutu)*/
+.dark-mode .options-bar {
+	background-color: rgba(128, 128, 128, 0.5);
+	border: 1px solid LightPink;
+	border-right: 1px solid transparent;
+}
+
+.options-bar-holder {
+	margin: auto;
+	align-self: center;
+	width: 50%;
+	margin-top: 10px;
+}
+/* <<< Sivupalkki */
+
+/* >>> Sivupalkin painikkeet*/
 .button-dm {
 	width: 30px;
 	height: 30px;
@@ -438,74 +436,7 @@ li::marker {
 .en .button-lang {
 	background-image: url("images/icon-fi.png");
 }
-/* <<< Sivupalkin painikkeet (iso ruutu)*/
-
-/* >>> Alapalkki (pieni ruutu) WIP*/
-@media(max-width:35em) {
-	.options-bar {
-		width: 100%;
-		height: 55px;
-		background-color: rgba(242, 242, 242);
-		border: 1px solid LightBlue;
-		border-right: 1px solid transparent;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
-		position: -webkit-sticky;
-		position: sticky;
-		bottom: 0;
-		align-items: center;
-		z-index: 90;
-	}
-
-	.dark-mode .options-bar {
-		background-color: rgba(128, 128, 128);
-		border: 1px solid LightPink;
-		border-right: 1px solid transparent;
-	}
-
-	.options-bar-holder {
-		margin: auto;
-		align-self: center;
-		height: 50%;
-	}
-}
-/* <<< Alapalkki (pieni ruutu) */
-
-/* >>> Alapalkin painikkeet (pieni ruutu) WIP*/
-.button-dm {
-	width: 30px;
-	height: 30px;
-	background-image: url("images/moon.png"), radial-gradient(rgba(255,255,255),rgba(95,95,95));
-	background-size: cover;
-	border: 1px solid rgba(242, 242, 242);
-	border-radius: 50%;
-	margin-bottom: 10px;
-}
-
-.dark-mode .button-dm {
-	background-image: url("images/sun.png"), radial-gradient(rgba(255,212,128),rgba(255,255,255));
-	background-size: cover;
-	border: 1px solid rgba(128, 128, 128);
-	border-radius: 50%;
-}
-
-.button-lang {
-	width: 30px;
-	height: 30px;
-	background-image: url("images/icon-uk.png");
-	background-size: cover;
-	border: 1px solid rgba(242, 242, 242);
-	border-radius: 50%;
-}
-
-.dark-mode .button-lang {
-	border: 1px solid rgba(242, 242, 242);
-}
-
-.en .button-lang {
-	background-image: url("images/icon-fi.png");
-}
-/* <<< Alapalkin painikkeet (pieni ruutu)*/
+/* <<< Sivupalkin painikkeet*/
 
 footer {
 	position: relative;
