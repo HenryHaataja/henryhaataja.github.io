@@ -139,7 +139,7 @@ p  {
 	opacity: 0;
 	background-color: rgba(230, 230, 230);
 	border: 1px solid LightBlue;
-	border-top: 1px dashed LightBlue;
+	border-top: 1px dashed transparent;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	width: 100%;
@@ -150,7 +150,7 @@ p  {
 .dark-mode .dropdownCV-content {
 	background-color: rgba(153, 153, 153);
 	border: 1px solid LightPink;
-	border-top: 1px dashed LightPink;	
+	border-top: 1px dashed transparent;	
 }
 
 .dropdownCV .dropdownCV-content.c  {
