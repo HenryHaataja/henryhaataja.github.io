@@ -37,6 +37,16 @@ img {
 	top: -5px;
 }
 
+.icon {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+	top: 90%;
+}
+
 .icon-arrow {
 	width: 18px;
 	height: 18px;
@@ -59,7 +69,7 @@ img {
 }
 
 h1 {
-	color: LightBlue;
+	color: rgba(196, 228, 237);
 	line-height: 2;
 }
 
@@ -68,8 +78,9 @@ h1 {
 }
 
 h2 {
-	color: LightBlue;
+	color: rgba(196, 228, 237);
 	line-height: 2;
+	text-align: left;
 }
 
 .dark-mode h2 {
@@ -97,14 +108,14 @@ p  {
 	padding: 20px;
 	padding-left: 25px;
 	padding-right: 25px;
-	background-color: rgba(242, 242, 242);
+	background-color: rgba(242, 242, 242, 0.5);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 600px;
 }
 
 .dark-mode .tile {
-	background-color: rgba(128, 128, 128);
+	background-color: rgba(128, 128, 128, 0.5);
 	color: white;
 	border: 1px solid LightPink;
 }
@@ -359,16 +370,16 @@ li::marker {
 	border: 2px solid LightPink;
 }
 
-/* >>> Sivupalkki */
-.sidebar {
+/* >>> Sivupaneeli */
+.options-bar {
 	width: 55px;
 	height: 100px;
-	background-color: rgba(242, 242, 242);
+	background-color: rgba(242, 242, 242, 0.5);
 	border: 1px solid LightBlue;
 	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-    position: -webkit-sticky;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 45%;
 	float: right;
@@ -377,21 +388,21 @@ li::marker {
 	z-index: 90;
 }
 
-.dark-mode .sidebar {
-	background-color: rgba(128, 128, 128);
+.dark-mode .options-bar {
+	background-color: rgba(128, 128, 128, 0.5);
 	border: 1px solid LightPink;
 	border-right: 1px solid transparent;
 }
 
-.sidebar-holder {
+.options-bar-holder {
 	margin: auto;
-    align-self: center;
-    width: 50%;
+	align-self: center;
+	width: 50%;
 	margin-top: 10px;
 }
-/* <<< Liukuva sivu-/alapalkki*/
+/* <<< Sivupalkki */
 
-/* >>> Sivupalkin painikkeet */
+/* >>> Sivupalkin painikkeet*/
 .button-dm {
 	width: 30px;
 	height: 30px;
@@ -425,7 +436,7 @@ li::marker {
 .en .button-lang {
 	background-image: url("images/icon-fi.png");
 }
-/* <<< Sivupalkin painikkeet */
+/* <<< Sivupalkin painikkeet*/
 
 footer {
 	position: relative;
