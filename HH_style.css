@@ -27,19 +27,6 @@ body {
 	background-size: cover;
 }
 
-@media  screen and (max-width: 600px) and (orientation: portrait) {
-	body {
-		background: url("images/wallpaper-day.jpg") no-repeat fixed;
-		background-size: auto 100%;
-	}
-	
-	.dark-mode {
-		/*background: rgba(102, 102, 102);*/ /* <-- tumman harmaa tausta */
-		background: url("images/wallpaper-night.jpg") no-repeat fixed;
-		background-size: auto 100%;
-	}
-}  
-
 img {
 	float: right;
 	height: 200px;
@@ -492,3 +479,16 @@ p.copyright {
 .en .eng {
 	display: block;
 }
+
+@media  screen and (max-width: 600px) and (orientation: portrait) {
+	body {
+		background: url("images/wallpaper-day.jpg") no-repeat fixed;
+		background-size: auto 100%;
+	}
+	
+	.dark-mode {
+		/*background: rgba(102, 102, 102);*/ /* <-- tumman harmaa tausta */
+		background: url("images/wallpaper-night.jpg") no-repeat fixed;
+		background-size: auto 100%;
+	}
+}  
