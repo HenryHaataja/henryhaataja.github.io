@@ -17,6 +17,9 @@ body {
 	/*background-color: white;*/
 	background: url("images/wallpaper-day.jpg") no-repeat fixed;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-position: left top;
 	color: black;
 	/*overflow: auto;*/
@@ -27,6 +30,9 @@ body {
 		vertical-align: middle;
 		background: url("images/wallpaper-day.jpg") no-repeat fixed;
 		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 		background-position: left top;
 		color: black;
 		width: auto;
@@ -38,6 +44,9 @@ body {
 	/*background: rgba(102, 102, 102);*/ /* <-- tumman harmaa tausta */
 	background: url("images/wallpaper-night.jpg") no-repeat fixed;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 img {
