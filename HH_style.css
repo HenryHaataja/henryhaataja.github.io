@@ -480,15 +480,19 @@ p.copyright {
 	display: block;
 }
 
+/* Sisällön sovitus mobiililaitteiden ruudulle */
 @media  screen and (max-width: 600px) and (orientation: portrait) {
 	body {
+		/*background-color: white;*/
 		background: url("images/wallpaper-day.jpg") no-repeat fixed;
 		background-size: auto 100%;
+		background-position: initial;
 	}
 	
 	.dark-mode {
 		/*background: rgba(102, 102, 102);*/ /* <-- tumman harmaa tausta */
 		background: url("images/wallpaper-night.jpg") no-repeat fixed;
 		background-size: auto 100%;
+		background-position: initial;
 	}
 }  
