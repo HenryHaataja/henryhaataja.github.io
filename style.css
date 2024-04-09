@@ -507,6 +507,7 @@ p.copyright {
 		/*background-size: auto 100%;*/
 		background-size: 2560px 1600px;
 		background-position: center center;
+		overflow: hidden;
 	}
 	
 	.dark-mode {
