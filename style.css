@@ -15,14 +15,18 @@ body {
 	box-sizing: border-box;
 	/*background-color: white;*/
 	background: url("images/wallpaper-day.jpg") no-repeat fixed;
-	background-size: cover;
+	/* background-size: cover;*/
+	background-size: 2560px 1600px;
+	background-position: center center;
 	color: black;
 }
 
 .dark-mode {
 	/*background: rgba(102, 102, 102);*/ /* <-- tumman harmaa tausta */
 	background: url("images/wallpaper-night.jpg") no-repeat fixed;
-	background-size: cover;
+	/*background-size: cover;*/
+	background-size: 2560px 1600px;
+	background-position: center center;
 }
 
 img {
