@@ -500,7 +500,6 @@ p.copyright {
 }
 
 /* Sisällön sovitus suuremmalle näytölle. WIP */
-/*
 @media only screen and (min-width: 600px) {
 	body {
 		background: url("images/wallpaper-day.jpg") no-repeat fixed;
@@ -545,4 +544,3 @@ p.copyright {
 		height: 85px;
 	}
 }
-*/
