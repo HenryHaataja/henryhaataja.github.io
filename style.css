@@ -37,9 +37,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    display: inline-block;
-    line-height: 0;
-    vertical-align: middle;
+    	display: inline-block;
+    	line-height: 0;
+    	vertical-align: middle;
 	top: 90%;
 }
 
@@ -47,9 +47,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    display: inline-block;
-    line-height: 0;
-    vertical-align: middle;
+    	display: inline-block;
+    	line-height: 0;
+    	vertical-align: middle;
 	top: 90%;
 	opacity: 0.2;
 }
@@ -154,7 +154,7 @@ td {
 }
 
 th:last-child{
-    text-align: right;
+    	text-align: right;
 }
 
 tr {
@@ -186,25 +186,27 @@ li::marker {
 	background-color: LightBlue;
 	border: 2px solid LightBlue;
 	border-radius: 50%;
+	box-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 	display: inline-block;
 }
 
 .dark-mode .dot-f {
 	background-color: LightPink;
-	border: 2px solid LightPink;
+	border: 1px solid LightPink;
 }
 
 .dot {
 	height: 9px;
 	width: 9px;
 	background-color: transparent;
-	border: 2px solid LightBlue;
+	border: 1px solid LightBlue;
 	border-radius: 50%;
+	box-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 	display: inline-block;
 }
 
 .dark-mode .dot {
-	border: 2px solid LightPink;
+	border: 1px solid LightPink;
 }
 
 /* >>> Pudotusvalikko: CV */
