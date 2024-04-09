@@ -502,17 +502,14 @@ p.copyright {
 /* Sisällön sovitus suuremmalle näytölle. WIP */
 @media only screen and (max-width: 600px) {
 	body {
-		width: 100% !important;
-		background: url("images/wallpaper-day.jpg") no-repeat fixed;
+		background: url("images/wallpaper-day.jpg") no-repeat;
 		/*background-size: auto 100%;*/
 		background-size: 2560px 1600px;
 		background-position: center center;
-		overflow: hidden;
 	}
 	
 	.dark-mode {
-		width: 100% !important;
-		background: url("images/wallpaper-night.jpg") no-repeat fixed;
+		background: url("images/wallpaper-night.jpg") no-repeat;
 		/*background-size: auto 100%;*/
 		background-size: 2560px 1600px;
 		background-position: center center;
