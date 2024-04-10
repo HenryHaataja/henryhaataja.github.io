@@ -400,6 +400,7 @@ li::marker {
 	border: 1px solid rgba(242, 242, 242);
 	border-radius: 50%;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 .dark-mode .button-dm {
@@ -448,6 +449,7 @@ li::marker {
 	background-size: cover;
 	border: 1px solid rgba(242, 242, 242);
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .dark-mode .button-lang {
