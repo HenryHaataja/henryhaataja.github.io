@@ -549,7 +549,7 @@ p.copyright {
 		position: -webkit-fixed;
 		position: -moz-fixed;
 		position: fixed;
-		top: 92%;
+		top: calc(100% - 50px); /* <-- positioned using 'top' because 'bottom' refused to work properly */
 		height: 45px;
 		width: 100%;
 		z-index: 95;
