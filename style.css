@@ -5,15 +5,17 @@
 }
 
 html {
+	height: 100%;
 	font-family: "Lucida Consolas", "Liberation Mono", monoscape;
 }
 
 body {
+	height: 100%;
 	border: 0;
 	outline: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/*background: rgba(242, 242, 242);*/
+	/*background-color: rgba(242, 242, 242);*/
 	background: url("images/wallpaper-day.jpg") no-repeat fixed;
 	/* background-size: cover;*/
 	background-size: 2560px 1600px;
@@ -41,9 +43,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    	display: inline-block;
-    	line-height: 0;
-    	vertical-align: middle;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
 	top: 90%;
 }
 
@@ -51,9 +53,9 @@ img {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-    	display: inline-block;
-    	line-height: 0;
-    	vertical-align: middle;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
 	top: 90%;
 	opacity: 0.2;
 }
@@ -61,11 +63,6 @@ img {
 .dark-mode .icon-arrow {
 	filter: invert(100%);
 	opacity: 1;
-}
-
-/* Käännä nuoli-ikoni ylöspäin kun valikko auki */
-.dropdownCV:focus .icon-arrow {
-	transform: rotate(180deg);
 }
 
 h1 {
@@ -90,6 +87,10 @@ h2 {
 	color: LightPink;
 }
 
+h3 {
+	line-height: 2;
+}
+
 p  {
 	line-height: 1.5;
 }
@@ -106,7 +107,7 @@ p  {
 	padding: 20px;
 	padding-left: 25px;
 	padding-right: 25px;
-	background-color: rgba(242, 242, 242, 0.66);
+	background-color: rgba(230, 230, 230, 0.66);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 550px;	/* 375px kun mobiili portrait */
@@ -154,7 +155,7 @@ td {
 }
 
 th:last-child{
-    	text-align: right;
+    text-align: right;
 }
 
 tr {
@@ -224,7 +225,7 @@ li::marker {
 	display: inline-block;
 	padding: 5px;
 	cursor: pointer;
-	background-color: rgba(230, 230, 230);
+	background-color: rgba(217, 217, 217);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 100%;
@@ -242,7 +243,7 @@ li::marker {
 	top: 40%;
 	visibility: hidden;
 	opacity: 0;
-	background-color: rgba(230, 230, 230);
+	background-color: rgba(217, 217, 217);
 	border: 1px solid LightBlue;
 	border-top: 1px dashed transparent;
 	border-bottom-left-radius: 25px;
@@ -282,6 +283,11 @@ li::marker {
 	left: 0;
 	opacity: 0;
 	z-index: -1;
+}
+
+/* Käännä nuoli-ikoni ylöspäin kun valikko auki */
+.dropdownCV:focus .icon-arrow {
+	transform: rotate(180deg);
 }
 
 .dropdownCV:focus .dropdownCV-content {
@@ -373,7 +379,6 @@ li::marker {
 	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-
 	align-items: center;
 	align-self: center;
 	padding: 10px;
@@ -423,7 +428,7 @@ li::marker {
 	display: none;
 	width: 55px;
 	height: 200px;
-	background-color: rgba(242, 242, 242, 0.5);
+	background-color: rgba(230, 230, 230, 0.5);
 	border: 1px solid LightBlue;
 	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
@@ -498,8 +503,20 @@ p.copyright {
 }
 
 /* >>> Sisällön sovitus kapeampaan mobiilinäyttöön. WIP */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 550px) {
+	/*
+	body {
+		background: url("images/wallpaper-day.jpg") no-repeat fixed;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	
+	.dark-mode {
+		background: url("images/wallpaper-night.jpg") no-repeat fixed;
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	*/
 	body {
 		height: 100%;
 		border: 0;
@@ -508,21 +525,11 @@ p.copyright {
 		box-sizing: border-box;
 		background: rgba(242, 242, 242);
 		background-size: cover;
-		/*
-		background: url("images/wallpaper-day.jpg") no-repeat fixed;
-		background-size: auto 100%;
-		background-position: center center;
-		*/
 	}
 
 	.dark-mode {
 		background: rgba(102, 102, 102); /* tumman harmaa tausta */
 		background-size: cover;
-		/*
-		background: url("images/wallpaper-night.jpg") no-repeat fixed;
-		background-size: auto 100%;
-		background-position: center center;
-		*/
 	}
 	
 	.tile {
@@ -534,7 +541,7 @@ p.copyright {
 		padding: 10px;
 		padding-left: 15px;
 		padding-right: 15px;
-		background-color: rgba(242, 242, 242, 0.66);
+		background-color: rgba(230, 230, 230, 1);
 		border: 1px solid LightBlue;
 		border-radius: 25px;
 		width: 375px;
@@ -563,7 +570,7 @@ p.copyright {
 		position: -webkit-fixed;
 		position: -moz-fixed;
 		position: fixed;
-		top: calc(100% - 50px); /* <-- positioned using 'top' because 'bottom' refused to work properly */
+		top: calc(100% - 50px);
 		height: 50px;
 		width: 100%;
 		z-index: 95;
