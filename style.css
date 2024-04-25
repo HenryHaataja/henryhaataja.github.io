@@ -499,6 +499,7 @@ p.copyright {
 
 /* >>> Sisällön sovitus kapeampaan mobiilinäyttöön. WIP */
 @media only screen and (max-width: 600px) {
+	/*
 	body {
 		background: url("images/wallpaper-day.jpg") no-repeat fixed;
 		background-size: auto 100%;
@@ -509,6 +510,22 @@ p.copyright {
 		background: url("images/wallpaper-night.jpg") no-repeat fixed;
 		background-size: auto 100%;
 		background-position: center center;
+	}
+	*/
+	body {
+	height: 100%;
+	border: 0;
+	outline: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: white;
+	background-size: cover;
+	color: black;
+	}
+
+	.dark-mode {
+		background: rgba(102, 102, 102); /* tumman harmaa tausta */
+		background-size: cover;
 	}
 	
 	.tile {
