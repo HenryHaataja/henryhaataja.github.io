@@ -15,7 +15,7 @@ body {
 	outline: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/*background-color: rgba(242, 242, 242);*/
+	/*background-color: rgba(255, 255, 255);*/
 	background: url("images/wallpaper-day.jpg") no-repeat fixed;
 	/* background-size: cover;*/
 	background-size: 2560px 1600px;
@@ -107,7 +107,7 @@ p  {
 	padding: 20px;
 	padding-left: 25px;
 	padding-right: 25px;
-	background-color: rgba(230, 230, 230, 0.66);
+	background-color: rgba(242, 242, 242, 0.66);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 550px;	/* 375px kun mobiili portrait */
@@ -225,7 +225,7 @@ li::marker {
 	display: inline-block;
 	padding: 5px;
 	cursor: pointer;
-	background-color: rgba(217, 217, 217);
+	background-color: rgba(230, 230, 230);
 	border: 1px solid LightBlue;
 	border-radius: 25px;
 	width: 100%;
@@ -243,7 +243,7 @@ li::marker {
 	top: 40%;
 	visibility: hidden;
 	opacity: 0;
-	background-color: rgba(217, 217, 217);
+	background-color: rgba(230, 230, 230);
 	border: 1px solid LightBlue;
 	border-top: 1px dashed transparent;
 	border-bottom-left-radius: 25px;
@@ -360,7 +360,7 @@ li::marker {
 }
 /* <<< Pudotusvalikko: CV */
 
-/* >>> Asetusvalikko (iso ikkuna -> sivupalkki, pieni ikkuna -> alapalkki) */
+/* >>> Asetusvalikko (iso ikkuna -> sivupalkki, kapea ikkuna -> alapalkki) */
 .options-bar {
 	position: -webkit-fixed;
 	position: -moz-fixed;
@@ -374,7 +374,7 @@ li::marker {
 .options-bar-holder {
 	width: 55px;
 	height: 95px;
-	background-color: rgba(242, 242, 242, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
 	border: 1px solid LightBlue;
 	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
@@ -428,7 +428,7 @@ li::marker {
 	display: none;
 	width: 55px;
 	height: 200px;
-	background-color: rgba(230, 230, 230, 0.5);
+	background-color: rgba(242, 242, 242, 0.5);
 	border: 1px solid LightBlue;
 	border-right: 1px solid transparent;
 	border-top-left-radius: 25px;
@@ -502,7 +502,7 @@ p.copyright {
 	display: block;
 }
 
-/* >>> Sisällön sovitus kapeampaan mobiilinäyttöön. WIP */
+/* >>> Sisällön sovitus mobiilinäyttöön / kapeampaan ikkunaan */
 @media only screen and (max-width: 550px) {
 	/*
 	body {
@@ -565,7 +565,6 @@ p.copyright {
 		height: 85px;
 	}
 	
-	/* >>> Asetusvalikko (iso ikkuna -> sivupalkki, pieni ikkuna -> alapalkki) */
 	.options-bar {
 		position: -webkit-fixed;
 		position: -moz-fixed;
@@ -594,7 +593,7 @@ p.copyright {
 	}
 	/* <<< Asetusvalikko */
 
-	/* >>> Asetusvalikon painikkeet*/
+	/* >>> Asetusvalikon painikkeet */
 	.button-dm {
 		width: 30px;
 		height: 30px;
@@ -631,40 +630,7 @@ p.copyright {
 	.en .button-lang {
 		background-image: url("images/icon-fi.png");
 	}
-
-	/* >>> WIP: pudotusvalikko kielipainikkeille */
-	.button-langList {
-		width: 30px;
-		height: 30px;
-		background-image: url("images/icon-uk.png");
-		background-size: cover;
-		border: 1px solid rgba(242, 242, 242);
-		border-radius: 50%;
-	}
-
-	.en .button-landList {
-		background-image: url("images/icon-fi.png");
-	}
-
-	.options-bar .dropdownLang-container {
-		display: none;
-		width: 55px;
-		height: 200px;
-		background-color: rgba(242, 242, 242, 0.5);
-		border: 1px solid LightBlue;
-		border-right: 1px solid transparent;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
-		position: absolute;
-		float: right;
-		top: 0;
-		right: 0;
-		padding-top: 110px;
-		padding-left: 13px;
-		align-items: center;
-		z-index: -1;
-	} /* <<< WIP: pudotusvalikko kielipainikkeille*/
-	/* <<< Asetusvalikon painikkeet*/
+	/* <<< Asetusvalikon painikkeet */
 
 	footer {
 		position: relative;
