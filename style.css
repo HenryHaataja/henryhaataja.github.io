@@ -52,7 +52,8 @@ img {
 .icon-arrow {
 	width: 18px;
 	height: 18px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
+	border-radius: 25px;
     display: inline-block;
     line-height: 0;
     vertical-align: middle;
