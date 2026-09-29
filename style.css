@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Arial;
 }
 
 html {
@@ -20,7 +21,7 @@ body {
 	background-size: 2560px 1600px;
 	background-position: center center;
 	color: black;
-	font-family: Arial, monoscape;
+	font-family: Arial;
 }
 
 .dark-mode {
